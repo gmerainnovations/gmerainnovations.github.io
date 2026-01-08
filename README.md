@@ -49,8 +49,34 @@ npm run dev
 
 ```bash
 npm run build
-npm start
 ```
+
+The static files will be generated in the `out` directory.
+
+## Deployment
+
+### GitHub Pages (Automatic)
+
+This repository is configured for automatic deployment to GitHub Pages:
+
+1. **Enable GitHub Pages** in your repository settings:
+   - Go to Settings → Pages
+   - Under "Source", select "GitHub Actions"
+   - The workflow will automatically deploy on every push to `main` branch
+
+2. **Your site will be available at:**
+   - `https://gmerainnovations.github.io/gmera/`
+
+### Manual Deployment
+
+1. Build the static site:
+```bash
+npm run build
+```
+
+2. The `out` directory contains all static files ready for deployment
+
+3. Deploy the `out` directory to any static hosting service
 
 ## Project Structure
 
