@@ -34,6 +34,21 @@ jobs:
       - name: Build
         run: npm run build
       
+      - name: Ensure CNAME exists
+        run: |
+          if [ ! -f out/CNAME ]; then
+            echo "CNAME file not found in out directory, checking public directory..."
+            if [ -f public/CNAME ]; then
+              cp public/CNAME out/CNAME
+              echo "CNAME file copied from public to out"
+            else
+              echo "Warning: CNAME file not found in public directory"
+            fi
+          else
+            echo "CNAME file already exists in out directory"
+          fi
+          cat out/CNAME || echo "CNAME file is empty or missing"
+      
       - name: Setup Pages
         uses: actions/configure-pages@v4
       
