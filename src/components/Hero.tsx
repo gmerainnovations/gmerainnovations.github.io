@@ -36,7 +36,6 @@ const Hero = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </button>
         
-        {/* Floating particles effect */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           {[...Array(6)].map((_, i) => (
             <div
