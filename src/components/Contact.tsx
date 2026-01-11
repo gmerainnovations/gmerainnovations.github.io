@@ -147,9 +147,8 @@ const Contact = () => {
                 <div>
                   <p className="font-semibold text-gray-900 mb-1">Address</p>
                   <p className="text-gray-600">
-                    123 Innovation Drive<br />
-                    Tech Park, Suite 400<br />
-                    San Francisco, CA 94105
+                    Windsor, Ontario, Canada<br />
+                    New Delhi, India<br />
                   </p>
                 </div>
               </div>
@@ -162,8 +161,8 @@ const Contact = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
                 </svg>
                 <p>Map View</p>
-                <p className="text-sm">San Francisco, California</p>
-                <a href="#" className="text-blue-600 hover:underline text-sm">View larger map</a>
+                <p className="text-sm">New Delhi, India</p>
+                <a href="https://www.google.com/maps/place/Tim+Hortons/@42.2882705,-83.0939662,15z/data=!4m6!3m5!1s0x883b32763b930ebb:0x64b345eec0fa18aa!8m2!3d42.2882695!4d-83.0836706!16s%2Fg%2F1vfwdjjz?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoASAFQAw%3D%3D" className="text-blue-600 hover:underline text-sm">View larger map</a>
               </div>
             </div>
           </div>
@@ -174,4 +173,3 @@ const Contact = () => {
 }
 
 export default Contact
-
